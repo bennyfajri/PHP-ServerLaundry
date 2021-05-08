@@ -6,8 +6,10 @@
             <file>file:/C:/xampp/htdocs/ServerLaundry/list_pelanggan.php</file>
             <file>file:/C:/xampp/htdocs/ServerLaundry/edit_pelanggan.php</file>
             <file>file:/C:/xampp/htdocs/ServerLaundry/dbconnect.php</file>
+            <file>file:/C:/xampp/htdocs/ServerLaundry/register.php</file>
             <file>file:/C:/xampp/htdocs/ServerLaundry/add_pelanggan.php</file>
             <file>file:/C:/xampp/htdocs/ServerLaundry/delete_pelanggan.php</file>
+            <file>file:/C:/xampp/htdocs/ServerLaundry/login.php</file>
         </group>
     </open-files>
 </project-private>
