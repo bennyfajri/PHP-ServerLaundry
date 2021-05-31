@@ -33,7 +33,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
                      echo json_encode(array( "status" => "false","message" => "Error occured, please try again!") );
                 }
             }
-                    mysqli_close($con);
+                    mysqli_close($conn);
          }
     }
 
