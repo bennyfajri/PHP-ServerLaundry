@@ -7,11 +7,14 @@
             <file>file:/C:/xampp/htdocs/ServerLaundry/edit_pelanggan.php</file>
             <file>file:/C:/xampp/htdocs/ServerLaundry/delete_produk.php</file>
             <file>file:/C:/xampp/htdocs/ServerLaundry/list_produk_kiloan.php</file>
+            <file>file:/C:/xampp/htdocs/ServerLaundry/dbconnect.php</file>
             <file>file:/C:/xampp/htdocs/ServerLaundry/add_produk.php</file>
             <file>file:/C:/xampp/htdocs/ServerLaundry/add_pelanggan.php</file>
+            <file>file:/C:/xampp/htdocs/ServerLaundry/list_produk_satuan.php</file>
             <file>file:/C:/xampp/htdocs/ServerLaundry/edit_produk.php</file>
             <file>file:/C:/xampp/htdocs/ServerLaundry/login.php</file>
             <file>file:/C:/xampp/htdocs/ServerLaundry/delete_pelanggan.php</file>
+            <file>file:/C:/xampp/htdocs/ServerLaundry/list_produk.php</file>
         </group>
     </open-files>
 </project-private>
