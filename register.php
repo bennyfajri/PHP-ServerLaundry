@@ -8,9 +8,9 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         $request1 = json_decode($postdata);
         $username = $request1->username;
         $namaLaundry = $request1->namaLaundry;
-        $namaUser = $request1->namaUser;
+        $alamat = $request1->alamat;
         $password = $request1->password;
-         if($username == '' || $namaLaundry == '' || $namaUser == '' || $password == ''){
+         if($username == '' || $namaLaundry == '' || $alamat == '' || $password == ''){
                 echo json_encode(array( "status" => "false","message" => "Parameter missing!") );
          }else{
                 $query= "SELECT * FROM laundry WHERE username='$username'";
@@ -18,7 +18,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
                 if(mysqli_num_rows($result) > 0){  
                    echo json_encode(array( "status" => "false","message" => "Username already exist!") );
                 }else{ 
-                 $query = "INSERT INTO laundry (Username,Password,Nama_User,Nama_Laundry) VALUES ('$username','$password','$namaUser','$namaLaundry')";
+                 $query = "INSERT INTO laundry (Username,Password,Alamat,Nama_Laundry) VALUES ('$username','$password','$alamat','$namaLaundry')";
                  if(mysqli_query($conn,$query)){
                      $query= "SELECT * FROM laundry WHERE username='$username'";
                              $result= mysqli_query($conn, $query);
