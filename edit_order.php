@@ -12,9 +12,9 @@
         $sqlquery = mysqli_query($conn, "UPDATE transaksi SET Total_Dibayar = '$totalBayar', status_pembayaran = '$statusBayar' where ID_Transaksi = '$idTrans' and ID_User = '$idUser'");
         
         if($sqlquery){
-            echo json_encode(array('message'=> 'customer data successfully updated.'));
+            echo json_encode(array('message'=> 'Order data successfully updated.'));
         }else{
-            echo json_encode(array('message'=> 'student data failed to update.'));
+            echo json_encode(array('message'=> 'Order data failed to update.'));
         }
     }
 
