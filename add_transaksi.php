@@ -18,7 +18,8 @@ if(!$idUser || !$idProduk || !$idPelanggan || !$tglSelesai|| !$jumlah
   echo json_encode(array('message'=>'required field is empty.'));
 }else{
 
-  $query = mysqli_query($conn, "INSERT INTO transaksi VALUE('null','$idPelanggan','$idProduk','$idUser',now(),'$tglSelesai','$jumlah', '$metodeBayar', '$jumlahHarga','$totalDibayar', '$catatan', '$statusBayar')");
+  $query = mysqli_query($conn, "INSERT INTO transaksi(ID_Pelanggan, ID_Produk, ID_User, Tgl_Masuk, Tgl_Selesai, Jumlah, Metode_Pembayaran, Jumlah_Harga, Total_Dibayar, catatan, status_pembayaran)"
+          . " VALUE('$idPelanggan','$idProduk','$idUser',now(),'$tglSelesai','$jumlah', '$metodeBayar', '$jumlahHarga','$totalDibayar', '$catatan', '$statusBayar')");
 
   if($query){
     echo json_encode(array('message'=>'Product data successfully added.'));

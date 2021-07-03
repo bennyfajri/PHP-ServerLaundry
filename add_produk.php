@@ -11,7 +11,8 @@ if(!$idUser || !$jenis || !$namaProduk || !$hargaProduk){
   echo json_encode(array('message'=>'required field is empty.'));
 }else{
 
-  $query = mysqli_query($conn, "INSERT INTO produk VALUE('null','$idUser','$jenis','$namaProduk','$hargaProduk')");
+  $query = mysqli_query($conn, "INSERT INTO produk(ID_User,Jenis, Nama_Produk, Harga_Produk) "
+          . "VALUE('$idUser','$jenis','$namaProduk','$hargaProduk')");
 
   if($query){
     echo json_encode(array('message'=>'Product data successfully added.'));

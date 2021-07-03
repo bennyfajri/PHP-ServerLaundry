@@ -13,9 +13,9 @@ if(!$idTrans && !$idProduk && !$idPelanggan){
   $query = mysqli_query($conn, "DELETE FROM transaksi WHERE ID_Transaksi='$idTrans' and ID_Produk = '$idProduk' and ID_Pelanggan = '$idPelanggan'");
 
   if($query){
-    echo json_encode(array('message'=>'student data successfully deleted.'));
+    echo json_encode(array('message'=>'Order data successfully deleted.'));
   }else{
-    echo json_encode(array('message'=>'student data failed to delete.'));
+    echo json_encode(array('message'=>'Order data failed to delete.'));
   }
 
 }

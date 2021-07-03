@@ -11,7 +11,8 @@ if(!$idUser || !$namaPelanggan || !$nohp || !$alamat){
   echo json_encode(array('message'=>'required field is empty.'));
 }else{
 
-  $query = mysqli_query($conn, "INSERT INTO pelanggan VALUE('','$idUser','$namaPelanggan','$nohp','$alamat')");
+  $query = mysqli_query($conn, "INSERT INTO pelanggan(ID_User, Nama_Pelanggan, NoHP, Alamat)"
+          . " VALUE('$idUser','$namaPelanggan','$nohp','$alamat')");
 
   if($query){
     echo json_encode(array('message'=>'Customer data successfully added.'));
